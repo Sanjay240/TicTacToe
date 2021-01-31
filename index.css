@@ -1,0 +1,53 @@
+#formheading{
+    text-align: center;
+    border-bottom: dotted;
+    color: blue;
+}
+#userform{
+    border: solid black 2px;
+    width: 80%;
+    background-color: aliceblue;
+    margin: auto;
+}
+#playersboxes{
+    display: flex;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+#playerboxes > label{
+    float: left;
+}
+#playerboxes > input{
+    float: left;
+    clear: left;
+}
+#submitbutton{
+    width: 400px;
+    color: green;
+}
+
+table, tr,td{
+    border: solid black 2px;
+    border-collapse: collapse;
+}
+
+td{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    
+}
+#gameheading{
+    text-align: center;
+    border-bottom: dotted red 1px;
+    color: blue;
+}
+#gametable{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 90px;
+
+}
+#currentPlayer{
+    text-align: center;
+}

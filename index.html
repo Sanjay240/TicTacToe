@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id = "gamepage">
+        <h1 id="gameheading">TIC TAC TOE</h1>
+        <table id = "gametable">
+            <tr id="row1">
+                <td id="cell0"></td>
+                <td id="cell1"></td>
+                <td id="cell2"></td>
+            </tr>
+            <tr id="row2">
+                <td id="cell3"></td>
+                <td id="cell4"></td>
+                <td id="cell5"></td>
+            </tr>
+            <tr id="row3">
+                <td id="cell6"></td>
+                <td id="cell7"></td>
+                <td id="cell8"></td>
+            </tr>
+        </table>
+        <div id="gamescore">
+            <h2 id="currentPlayer">Current Player</h2>
+            <button id="helpbutton">HELP</button>
+            <button id="restartgame">Restart</button>
+            <h2 id="firstplayername">Player1</h2>
+            <h2 id="firstplayerscore">0</h2>
+            <h2 id="secondplayername">Player2</h2>
+            <h2 id="secondplayerscore">0</h2>
+        </div>
+    </div>
+    <div id="formpage">
+        <form id="userform">
+            <h1 id="formheading">Enter Your Information</h1>
+            <fieldset>
+            <div id="playersboxes">
+            <div id="firstplayer">
+                <h2 id= playerLabel1>Player1</h2>
+                <label for="name1">Name</label>
+                <input type="text" name="name1" id="name1" required maxlength="40" >
+                <label for="age1">Age</label>
+                <input type="number" name="age1" id="age1" required min="1" >
+                <label for="color1">Color</label>
+                <input type ="color" name="color1"  id="color1" >
+            </div>
+            <div id="secondplayer">
+                <h2 id= playerLabel2>Player2</h2>
+                <label for="name2">Name</label>
+                <input type="text" name="name2" id="name2" required maxlength="40">
+                <label for="age2">Age</label>
+                <input type="number" name="age2" id="age2"  min="1" required>
+                <label for="color2">Color</label>
+                <input type ="color" name="color2"  id="color2" >
+            </div>
+        </div>
+    </fieldset>
+            <input type="submit" id="submitbutton">
+    </div>
+    
+    </form>
+    <div id="helpInformation">
+        <p>In this game your scores are displayed below your name and once the game finishes click <em>Restart</em>
+            to play again or <em>Reload</em> the page to start all over again.
+        </p>
+        <button id="donebutton">DONE</button>
+    </div>
+</body>
+</html>
